@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <!--<Nullable>enable</Nullable>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\webapi1.txt" />
+    <None Remove="Resources\webapi2.txt" />
+    <None Remove="Resources\webapi3.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\webapi1.txt" />
+    <EmbeddedResource Include="Resources\webapi2.txt" />
+    <EmbeddedResource Include="Resources\webapi3.txt" />
+  </ItemGroup>
+
+</Project>
